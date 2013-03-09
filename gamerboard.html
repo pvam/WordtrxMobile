@@ -1,0 +1,102 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Gamer Stats</title>
+<link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37535306-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="js/gameplay.js" ></script>
+<script>
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'js/timer.php',false);
+xhr.send(null);
+var seconds_left =180 -xhr.responseText;
+var interval = setInterval(function() {
+    document.getElementById('timer_div').innerHTML = --seconds_left;
+    if (seconds_left <= 0)
+    {
+        document.getElementById('timer_div').innerHTML = "Game started";
+        clearInterval(interval);
+		window.location ="http://www.wordtrix.in/game.html" ;
+    }
+}, 1000);
+</script>
+<link href="styles/coolMenu.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="styles/check_cs6.css" rel="stylesheet" type="text/css">
+<link href="styles/play.css" rel="stylesheet" type="text/css">
+<script src="js/fb.js"> </script>
+<script src="//connect.facebook.net/en_US/all.js"></script>
+</head>
+
+<body>
+<div>
+ <div style="background-color:#E7EBF2;height:auto;">
+	<div class="container_16" style="background-color:#004080; height:90px; opacity:0.8" >
+    <a href="http://www.wordtrix.in/">
+        <img style="background-color:transparent;float:left" src="images/logo-final.png">
+    </a>
+		<div align="right" style="margin-left: 800px">  
+		<ul id="coolMenu" style="margin-top:40px;">
+			<li id="user-info"><a href="#" onClick="loginUser();">login</a></li>
+			<li>
+				<a href="#">Settings</a>
+				<ul class="noJS">
+					<li><a href="#">profile</a></li>
+					<li><a href="#">others</a></li>
+					<li id="logout"><a href="#" onClick="logoutUser();">logout</a></li>
+				</ul>
+			</li>
+		</ul>
+		</div>
+        <div style="float:right;">
+        <img id="user_photo" height="50px" width="50px;" style="padding:30px;margin-right:90px;">
+        <label id="user_name" style="position:relative;left:-115px;top:-40px;color:#FFF"> Hi ,Player </label>
+        </div>
+	</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:24px;color:#0000A0;margin-left:200px;"  > next game : </label>
+<label id="timer_div" style="font:'Trebuchet MS', Arial, Helvetica, sans-serif; font-size:36px; color:#0080FF;"></label>
+<img id="user_image_large" height="200" width="200" style="margin-left:100px; position:absolute; left: -96px; top: 183px;" />
+<p><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label style="font-size:36px;color:#FF0000;"  > Gamer Statistics </label></br></p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+&nbsp;&nbsp;<label style="font-size:30px;color:#0000A0;margin-left:210px;"> score   : </label>
+<label id="divscore" style="margin-left:10px;font:'Trebuchet MS', Arial, Helvetica, sans-serif; font-size:36px; color:#0000A0;">65</label>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label style="font-size:30px;color:#0000A0;"  >words : </label>
+<label id="totalwords" style="font:'Trebuchet MS', Arial, Helvetica, sans-serif; font-size:36px; color:#0000A0;">75</label>
+<script>
+document.getElementById('divscore').innerHTML = window.localStorage.getItem('finalscore');
+document.getElementById('totalwords').innerHTML = window.localStorage.getItem('wordcount');
+</script>
+<p>
+</p>
+<p>
+<!--<label id="count_div" style="font:'Trebuchet MS', Arial, Helvetica, sans-serif; font-size:36px; color:#0000A0;"></label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:30px;color:#0000A0;"  > bonus : </label></p>-->
+</div>
+<iframe src="http://www.wordtrix.in/js/rank.php" name="gamer board" frameborder="0" height="800" width="650" style="position: absolute; top: 85px; left: 700px;"></iframe>
+<!--<iframe src="http://www.wordtrix.in/js/unfound.php" name="unfound words" frameborder="0" height="400" width="400" style="position: absolute; top: 0px; left: 100px;top: 400px;">-->
+</iframe>
+
+</div>
+
+</body>
+</html>

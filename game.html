@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Wordtrix</title>
+<link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37535306-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+ window.onload = function() {
+	  //init();
+ };
+</script>
+<script src="js/gameplay.js" ></script>
+<script src="js/fb.js"> </script>
+<script src="//connect.facebook.net/en_US/all.js"></script>
+
+<link href="styles/table.css" rel="stylesheet" type="text/css">
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+<div class="container">
+<div class="row">
+  <div class="span6" align="center" >
+ <label id="timer_div"><h3><b>Time left : </b>90</h3></label>
+  </div>
+  <div class="span6" >
+  <label><h1 style="color:#004080;">Score : 123</h1></label>
+  </div>
+  </div>
+<div class="row" align="center">
+<table width="100%" height="100%" border="1" cellpadding="10" onMouseUp="mouseup()" class="otable">
+   <tr>
+    <td><button id="11" class="buttoncss" onmousedown ="mousedown('11')" onMouseUp ="mouseup('11')" onMouseOver="mouseover('11')" type="button">D</button></td>
+     <td>  <button id="12"  class="buttoncss" onmousedown ="mousedown('12')" onMouseUp ="mouseup('12')" onMouseOver="mouseover('12')" type="button">A</button> </td>
+     <td>  <button id="13"  class="buttoncss" onmousedown ="mousedown('13')" onMouseUp ="mouseup('13')" onMouseOver="mouseover('13')" type="button">S</button> </td>
+     <td>  <button id="14"  class="buttoncss" onmousedown ="mousedown('14')" onMouseUp ="mouseup('14')" onMouseOver="mouseover('14')" type="button">E</button></td>
+   </tr>
+   <tr>
+     <td>  <button id="21"  class="buttoncss" onmousedown ="mousedown('21')" onMouseUp ="mouseup('21')" onMouseOver="mouseover('21')" type="button">B</button></td>
+     <td>  <button id="22"  class="buttoncss" onmousedown ="mousedown('22')" onMouseUp ="mouseup('22')" onMouseOver="mouseover('22')" type="button">O</button></td>
+     <td>  <button id="23"  class="buttoncss" onmousedown ="mousedown('23')" onMouseUp ="mouseup('23')" onMouseOver="mouseover('23')" type="button">X</button></td>
+     <td>  <button id="24"  class="buttoncss" onmousedown ="mousedown('24')" onMouseUp ="mouseup('24')" onMouseOver="mouseover('24')" type="button">U</button></td>
+   </tr>
+   <tr>
+     <td>  <button id="31"  class="buttoncss" onmousedown ="mousedown('31')" onMouseUp ="mouseup('31')" onMouseOver="mouseover('31')" type="button">S</button></td>
+     <td>  <button id="32"  class="buttoncss" onmousedown ="mousedown('32')" onMouseUp ="mouseup('32')" onMouseOver="mouseover('32')" type="button">E</button></td>
+     <td>  <button id="33"  class="buttoncss" onmousedown ="mousedown('33')" onMouseUp ="mouseup('33')" onMouseOver="mouseover('33')" type="button">R</button></td>
+     <td>  <button id="34"  class="buttoncss" onmousedown ="mousedown('34')" onMouseUp ="mouseup('34')" onMouseOver="mouseover('34')" type="button">O</button></td>
+   </tr>
+   <tr>
+     <td>  <button id="41"  class="buttoncss" onmousedown ="mousedown('41')" onMouseUp ="mouseup('41')" onMouseOver="mouseover('41')" type="button">T</button></td>
+     <td>  <button id="42"  class="buttoncss" onmousedown ="mousedown('42')" onMouseUp ="mouseup('42')" onMouseOver="mouseover('42')" type="button">E</button></td>
+     <td>  <button id="43"  class="buttoncss" onmousedown ="mousedown('43')" onMouseUp ="mouseup('43')" onMouseOver="mouseover('43')" type="button">R</button></td>
+     <td>  <button id="44"  class="buttoncss" onmousedown ="mousedown('44')" onMouseUp ="mouseup('44')" onMouseOver="mouseover('44')" type="button">A</button></td>
+   </tr>
+ </table>
+</div>
+</div>
+</body>
+</html>

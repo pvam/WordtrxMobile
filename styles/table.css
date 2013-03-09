@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+.otable {
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFF;
+	background-color:transparent;
+	box-shadow:5px 5px 10px #999;
+}
+.buttoncss {
+	font-size: 32px;
+	background-color:#004080;
+	height: 3.66%;
+	width: 6.5%;
+	color: #FFF;
+	padding-top: 0.46%;
+	padding-left: 1.46%;
+	padding-bottom: .46%;
+	padding-right: 1.46%;
+	border-style: hidden;
+}
+td {
+	padding: .73%;
+	background-color:#FFF;
+}
+
+.buttoncssmod {
+	font-size: 32px;
+	font-weight: normal;
+	background-color:#999;
+	padding-top: 1.46%;
+	padding-left: 1.46%;
+	padding-bottom: 2.46%;
+	padding-right: 1.46%;
+	cursor: default;
+	border-style: hidden;
+	<!--text-decoration: line-through;-->
+}
+.buttoncsscorrect {
+	font-size: 34px;
+	font-weight: normal;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	cursor: default;
+	border-style: hidden;
+	<!--text-decoration: line-through;-->
+}
+
+.buttoncsswrong {
+	font-size: 34px;
+	font-weight: normal;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	cursor: default;
+	border-style: hidden;
+	<!--text-decoration: line-through;-->
+}
+.buttoncssexisting {
+	font-size: 34px;
+	font-weight: normal;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	color:#000;
+	cursor: default;
+	border-style: hidden;
+}

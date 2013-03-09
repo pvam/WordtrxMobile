@@ -1,0 +1,91 @@
+
+
+.otable {
+        widtd=360;
+        height=360;
+}
+.buttoncss {
+	height:50px;
+	width:50px;
+	font-size: 32px;
+	font-weight: normal;
+	background-color: #7BA6B4;
+	color: #FFF;
+	cursor: default;
+	border-top-color: #9C3;
+	border-right-color: #9C3;
+	border-left-color: #9c3;
+	border-bottom-color: #9c3;
+	border-style: hidden;
+}
+
+
+.buttoncssmod {
+	font-size: 32px;
+	font-weight: normal;
+	background-color:#999;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	color: #FFF;
+	cursor: default;
+	border-top-color: #9C3;
+	border-right-color: #9C3;
+	border-left-color: #9c3;
+	border-bottom-color: #9c3;
+	border-style: hidden;
+	<!--text-decoration: line-through;-->
+}
+.buttoncsscorrect {
+	font-size: 34px;
+	font-weight: normal;
+	background-color:#0080FF;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	color: #FFF;
+	cursor: default;
+	border-top-color: #9C3;
+	border-right-color: #9C3;
+	border-left-color: #9c3;
+	border-bottom-color: #9c3;
+	border-style: hidden;
+	<!--text-decoration: line-through;-->
+}
+
+.buttoncsswrong {
+	font-size: 34px;
+	font-weight: normal;
+	background-color:#C80000;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	color: #FFF;
+	cursor: default;
+	border-top-color: #9C3;
+	border-right-color: #9C3;
+	border-left-color: #9c3;
+	border-bottom-color: #9c3;
+	border-style: hidden;
+	<!--text-decoration: line-through;-->
+}
+.buttoncssexisting {
+	font-size: 34px;
+	font-weight: normal;
+	background-color:#FFFF80;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	color:#000;
+	cursor: default;
+	border-top-color: #9C3;
+	border-right-color: #9C3;
+	border-left-color: #9c3;
+	border-bottom-color: #9c3;
+	border-style: hidden;
+	<!--text-decoration: line-through;-->
+}

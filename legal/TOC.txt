@@ -1,0 +1,4 @@
+We wish to account credibility for few sources which made our work simpler.
+Firstly we thank http://www.becomeawordgameexpert.com/dictionary.htm for providing us with the ditionary.
+Secondly we thank Windows Azure which helped us in hosting our website.
+We also thank http://opengameart.org/ for providing us the sounds.
